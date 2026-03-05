@@ -2,12 +2,12 @@
 
 import { Brain, TrendingUp, AlertCircle, XCircle, BookOpen, Zap, Lightbulb, CheckCircle } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Badge, type BadgeProps } from '@/components/ui/badge'
+import { Badge } from '@/components/ui/badge'
 import type { Sentiment, SentimentLabel } from '@/types'
 
 interface Props { sentiment: Sentiment }
 
-type SentimentVariant = Extract<BadgeProps['variant'], 'positive' | 'mixed' | 'negative'>
+type SentimentVariant = 'positive' | 'mixed' | 'negative'
 
 const CFG: Record<SentimentLabel, {
     variant: SentimentVariant
