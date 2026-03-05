@@ -135,8 +135,8 @@ export default function SentimentCard({ sentiment }: Props) {
 
             {/* ── Recommendation ─────────────────────────────────────────────────── */}
             <Card className={`animate-fade-up [animation-delay:180ms] ${sentiment.recommended
-                    ? 'border-emerald-500/20 bg-emerald-500/5'
-                    : 'border-red-500/20 bg-red-500/5'
+                ? 'border-emerald-500/20 bg-emerald-500/5'
+                : 'border-red-500/20 bg-red-500/5'
                 }`}>
                 <CardContent className="p-4 flex items-center gap-3">
                     {sentiment.recommended
